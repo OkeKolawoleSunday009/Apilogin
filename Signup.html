@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form @Oke Kolawole Sunday </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+     background-color: gray;
+
+    /* background-color: black; */
+}
+:root{
+    --primary:rgb(3, 3, 27);
+
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px !important;
+
+}
+.section__1{
+    flex: 0.8;
+    background-color: var(--primary);
+    color: rgb(222, 220, 220);
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.section__1 > h1{
+    color: white;
+} 
+.section__1 > p{
+    width: 250px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.section__2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    justify-content: center;
+    color: var(--primary);
+    background-color: white;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.button__1{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: var(--primary);
+    color: white;
+    width: 100px;
+}
+.social__links{
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.social__links > a{
+    text-decoration: none;
+    /* text-transform: none; */
+    color: var(--primary);
+}
+ion-icon {
+    font-size: 30px;
+  }
+
+.section__2 > .reg{
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+.inputflex{
+    /* width: 100px; */
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 15px;
+
+    /* background-color: gray; */
+}
+form{
+    margin-top: 20px;
+}
+input::placeholder{
+    padding-left: 5px;
+}
+
+form input{
+    /* background-color: gray; */
+    border: none;
+    width: 200px;
+    max-width: 300px;
+}
+form ion-icon{
+    font-size: 20px;
+}
+.button__2{
+    
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: var(--primary);
+    color: white;
+    width: 100px;
+    outline: 1 px solid gray;
+}
+footer{
+    color: var(--primary);
+    position: absolute;
+    bottom: 0;
+    font-weight: bolder;
+}
+    </style>
+</head>    
+<body>
+    <div class="container">
+
+            <div class="section__1">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with ur personal info</p>
+                <button class="button__1">SIGN IN</button>
+            </div>
+
+
+            <div class="section__2">
+                <h1>Create Account</h1>
+                <div class="social__links">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href=""><ion-icon name="logo-googleplus"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+
+                <p class="reg">or use your email for registration</p>
+
+                <form action="/" method="POST">
+                    <div class="user inputflex">
+                        <ion-icon name="contact"></ion-icon>
+                        <input placeholder="Name" type="text" name="fname" id="">
+                    </div>
+                    <div class="Email inputflex">
+                        <ion-icon name="mail"></ion-icon>
+                        <input placeholder="Email" type="text" name="email" id="">
+                    </div>
+                    <div class="password inputflex">
+                        <ion-icon name="lock"></ion-icon>
+                        <input  placeholder="Password" type="text" name="password" id="">
+
+                    </div>
+                      <center><button class="button__2">SIGN UP</button></center>
+
+                </form>
+
+                <footer>By Oke Kolawole Sunday</footer>
+
+            </div>
+
+
+    </div>
+    
+</body>
+</html>
